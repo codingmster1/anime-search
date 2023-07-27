@@ -17,13 +17,109 @@
         <nav>
             <div class="nav__container">
                 <figure class="nav__logo--wrapper">
-                    <img src="" class="nav__logo"/>
-                    <img src="" class="nav__logo"/>
+                    <img src="./assets/2_all-the-anime-logo.png" class="nav__logo"/>
+                    <img src="./assets/behelit.png" class="nav__logo"/>
                 </figure>
+<!--Header logos end-->
+<div class="nav__link--list">
+     <div class="nav__link">
+              <a href="#search" class="nav__link--anchor link__hover">Search</a>
             </div>
-
-        </nav>
+            <div class="nav__link">
+              <a href="#trending" class="nav__link--anchor link__hover"
+                >Trending</a>
+            </div>
+            <div class="nav__link">
+              <a href="#popular" class="nav__link--anchor link__hover"
+                >Popular</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div class="header__container">
+          <figure class="header__img--wrapper">
+            <img src="./assets/fairy-guts.gif" class="header__img" alt="" />
+          </figure>
+          <h1 class="title">All the Anime in one search engine.</h1>
+        </div>
+      </header>
     </section>
+
+
+    <section id="search">
+        <div class="container">
+          <div class="row">
+            <form class="search__form" onsubmit="showSearchRes(event)">
+              <input
+                type="text"
+                class="search__box"
+                placeholder="Search"
+                name="search__term"
+                required/>
+
+                <button class="search__button">
+                    <i class="fa-brands fa-searchengin" style="color: #e6700f;"></i>
+
+                </button>
+                </form>
+                </div>
+                </div>
+                </section>
+
+                <section id="trending">
+                    <div class="container">
+                      <div class="row">
+                        <h2 class="subtitle">Trending</h2>
+                        <div class="anime__list trending__list">
+                          <i class="fa-solid fa-spinner" style="color: #f46a1f;"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section id="popular">
+                    <div class="container">
+                      <div class="row">
+                        <h2 class="subtitle">Popular</h2>
+                        <div class="anime__list popular__list">
+                            <i class="fa-solid fa-spinner" style="color: #f46a1f;"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <footer>
+                    <div class="container">
+                      <div class="row">
+                        <div class="footer__container">
+                          <a href="#">
+                            <figure class="footer__logo--wrapper">
+                              <img src="./assets/skull.gif" class="footer__logo" alt="" />
+                            </figure>
+                          </a>
+                          <div class="footer__link--list">
+                            <div class="footer__link">
+                              <a href="#search" class="footer__link--anchor link__hover"
+                                >Search</a>
+                            </div>
+                            <div class="footer__link">
+                              <a href="#trending" class="footer__link--anchor link__hover"
+                                >Trending</a>
+                            </div>
+                            <div class="footer__link">
+                                <a href="#popular" class="footer__link--anchor link__hover"
+                                >Popular</a
+                              >
+                            </div>
+                          </div>
+                          <div class="footer__copyright">
+                            Copyright &copy; 2023 Jeff Doyle
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </footer>
     
 </body>
 <script src="script.js"></script>
