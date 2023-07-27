@@ -12,6 +12,75 @@
     <title>Anime Search Engine</title>
 </head>
 <body>
+    <section id="landing">
+        <nav>
+          <div class="nav__container">
+            <a href="./index.html">
+              <figure class="nav__logo--wrapper">
+                <img src="./assets/2_all-the-anime-logo.png" class="nav__logo" alt="" />
+                <img src="./assets/behelit.png" class="nav__logo" alt="" />
+              </figure>
+            </a>
+            <div class="nav__link--list">
+              <div class="nav__link">
+                <a href="./index.html#search"
+                  class="nav__link--anchor link__hover"
+                  >Search</a>
+              </div>
+              <div class="nav__link">
+                <a href="./index.html#trending"
+                  class="nav__link--anchor link__hover"
+                  >Trending</a>
+              </div>
+              <div class="nav__link">
+                <a href="./index.html#popular"
+                  class="nav__link--anchor link__hover"
+                  >Popular</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <section id="search">
+        <div class="container">
+          <div class="row">
+            <form class="search__form" onsubmit="search(event)">
+              <input
+                type="text"
+                class="search__box"
+                placeholder="Search anime..."
+                name="search__term"
+                required/>
+                <button class="search__button">
+                    <i class="fa-brands fa-searchengin" style="color: #e6700f;"></i>
+                </button>
+                </form>
+                </div>
+                </div>
+                </section>
+
+
+                <section id="results">
+                    <div class="container">
+                      <div class="row">
+                        <div class="results__header">
+                          <h2 class="subtitle">Search results</h2>
+                          <select name="" id="filter" onchange="filterAnime(event)">
+                            <option value="" disabled selected>Sort</option>
+                            <option value="new">New to old</option>
+                            <option value="old">Old to new</option>
+                            <option value="trending">Trending now</option>
+                            <option value="popular">Popular</option>
+                          </select>
+                        </div>
+                        <div class="results__loading">
+                            <i class="fa-solid fa-spinner" style="color: #f46a1f;"></i>
+                        </div>
+                        <div class="anime__list results__list"></div>
+                      </div>
+                    </div>
+                  </section>
     
 </body>
 </html>
