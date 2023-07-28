@@ -168,7 +168,7 @@ html {
   
   .nav__link--anchor {
     color: #e6700f;
-    font-size: 24px;
+    font-size: 20px;
   }
   
   /* header */
@@ -269,6 +269,66 @@ html {
   
   .footer__copyright {
     color: #c9610c;
+  }
+
+  /* for phone viewing */
+
+  @media (max-width: 1024px) {
+    .anime {
+      width: 40%;
+    }
+  
+    .anime__img--wrapper {
+      max-height: 500px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 32px;
+    }
+  
+    .search__form {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .anime {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav__link {
+      display: none;
+    }
+    .nav__logo 
+    {
+      width: 120px;
+      height: 20px;
+    }
+  
+    .nav__link:nth-child(1) {
+      display: block;
+    }
+  
+    .header__container {
+      padding: 20px;
+    }
+  
+    .search__box {
+      padding-right: 20px;
+    }
+  
+    .results__header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .footer__link--list {
+      display: none;
+    }
   }
   
   
