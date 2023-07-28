@@ -217,6 +217,11 @@ html {
     font-size: 20px;
   }
 
+  .fa-searchengin 
+  {
+    font-size: 30px;
+  }
+
   /* results */
 
   .results__header {
