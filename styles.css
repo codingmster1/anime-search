@@ -200,7 +200,7 @@ html {
     align-items: center;
   }
   
-  .search__box {
+  .search__box  {
     padding: 20px 80px 20px 20px;
     border: 2px solid #e6700f;
     border-radius: 40px;
