@@ -42,7 +42,7 @@ function showSearchRes(event) {
           <figure class="anime__img--wrapper">
             <img src="${res.coverImage.extraLarge}" class="anime__img" alt="" />
           </figure>
-          <h3 class="anime__name">${res.title.romaji}</h3>
+          <h3 class="anime__name">${res.title.english}</h3>
         </a>
       </div>
     `;
@@ -62,7 +62,7 @@ function showSearchRes(event) {
               }
               media (id: $id, search: $search, type: ANIME, isAdult: false, sort: TRENDING_DESC) {
                   title {
-                      romaji
+                      english
                   }
                   coverImage {
                       extraLarge
@@ -126,7 +126,7 @@ async function popular() {
               }
               media (id: $id, search: $search, type: ANIME, isAdult: false, sort: POPULARITY_DESC) {
                   title {
-                      romaji
+                      english
                   }
                   coverImage {
                       extraLarge
