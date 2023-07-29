@@ -113,7 +113,6 @@ trending();
 
 async function popular() {
     popularList.classList.add("loading");
-    // Here we define our query as a multi-line string
     const query = `
       query ($id: Int, $page: Int, $perPage: Int, $search: String) {
           Page (page: $page, perPage: $perPage) {
