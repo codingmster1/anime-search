@@ -197,6 +197,12 @@ html {
 
   /* search */
 
+  .search 
+  {
+    width: 45px;
+    height: 65px;
+  }
+
   .search__form {
     display: flex;
     align-items: center;
@@ -208,11 +214,13 @@ html {
     border-radius: 40px;
     margin-right: 16px;
     font-size: 18px;
+    
   }
   
   .search__button {
     border: none;
     background-color: #ffffff;
+    
   }
   
   .search__button--icon {
