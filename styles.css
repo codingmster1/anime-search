@@ -203,6 +203,12 @@ html {
     height: 65px;
   }
 
+  .chibi 
+  {
+    width: 100px;
+    height: 100px;
+  }
+
   .search__form {
     display: flex;
     align-items: center;
