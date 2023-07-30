@@ -89,7 +89,7 @@ html {
     width: 0%;
     bottom: -3px;
     right: 0;
-    transition: all 300ms ease;
+    transition: all 600ms ease;
     background-color: #e78e45;
   }
 
@@ -168,7 +168,8 @@ html {
   
   .nav__link--anchor {
     color: #e6700f;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: bold;
   }
   
   /* header */
